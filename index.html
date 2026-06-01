@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <title>多媒體線上工具箱 | 雲端極簡創作中心</title>
-    <!-- 引入 Tailwind CSS CDN -->
+    
+    <link rel="icon" href="icon.png" type="image/png">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google 字體 Inter 與 Noto Sans TC -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     
     <script>
@@ -79,15 +80,12 @@
         <div class="absolute -top-40 -left-40 w-80 h-80 bg-cyan-500/10 rounded-full blur-[100px] animate-pulse-slow"></div>
         <div class="absolute top-1/3 -right-40 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[120px] animate-blob"></div>
         <div class="absolute -bottom-20 left-1/4 w-72 h-72 bg-emerald-500/10 rounded-full blur-[90px] animate-pulse-slow"></div>
-        <!-- 科技網格底紋 -->
         <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.012)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
     </div>
 
-    <!-- 主容器 -->
     <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-12 flex-grow flex flex-col justify-center">
         
         <header class="text-center mb-8 md:mb-12">
-            <!-- 智慧偵測徽章 (響應式 wrap 處理，防止行動端擠爆) -->
             <div class="inline-flex max-w-full items-center gap-2 px-3 py-1.5 rounded-full glass-panel border border-slate-700/50 mb-5 text-left">
                 <span class="flex h-2 w-2 relative shrink-0 mt-0.5 sm:mt-0">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
@@ -108,21 +106,17 @@
 
         <main class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto mb-10 w-full">
 
-            <!-- 卡片 1：線上拍照與錄影 -->
             <div class="group relative flex flex-col justify-between p-6 sm:p-8 rounded-3xl glass-panel neon-border-camera-video transition-all duration-300 ease-out transform hover:-translate-y-1.5 overflow-hidden min-h-[340px] sm:min-h-[360px]">
                 <div class="absolute -right-10 -top-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl group-hover:bg-purple-500/20 transition-all duration-300"></div>
                 
                 <div>
-                    <!-- 圖標容器 -->
                     <div class="flex gap-3 mb-5">
                         <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform duration-300">
-                            <!-- 錄影圖標 -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="w-5.5 h-5.5 sm:w-6 sm:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
                             </svg>
                         </div>
                         <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform duration-300">
-                            <!-- 相機圖標 -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="w-5.5 h-5.5 sm:w-6 sm:h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 47.74 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
@@ -130,7 +124,6 @@
                         </div>
                     </div>
 
-                    <!-- 標題與描述 -->
                     <h2 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors duration-200 flex items-center gap-2">
                         線上拍照與錄影
                         <span class="text-[10px] sm:text-xs bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded-full border border-purple-500/30 font-normal shrink-0">多合一</span>
@@ -143,7 +136,6 @@
                 <div class="mt-6 pt-4 border-t border-slate-800/60 flex flex-col gap-2.5">
                     <span class="text-[10px] sm:text-[11px] tracking-wider text-purple-400 font-semibold uppercase">請選擇您的裝置版本：</span>
                     <div class="grid grid-cols-2 gap-2.5">
-                        <!-- 電腦版 -->
                         <a href="https://gemini.google.com/share/2c6fbcc357b3" target="_blank" rel="noopener noreferrer" 
                            onclick="handleRedirect('📹 拍照錄影 (電腦版)')" id="btn-camera-pc"
                            class="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl border border-slate-700/60 bg-slate-900/40 hover:bg-purple-950/20 hover:border-purple-500/40 transition-all duration-300 text-slate-300 hover:text-white relative overflow-hidden group/btn text-center min-h-[64px]">
@@ -152,7 +144,6 @@
                             </span>
                             <span class="text-[9px] sm:text-[10px] text-slate-500 mt-1 group-hover/btn:text-purple-300 transition-colors">大螢幕/免安裝</span>
                         </a>
-                        <!-- 手機版 (已更新網址) -->
                         <a href="https://gemini.google.com/share/3900c7e27b75" target="_blank" rel="noopener noreferrer" 
                            onclick="handleRedirect('📸 拍照錄影 (手機版)')" id="btn-camera-mobile"
                            class="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl border border-slate-700/60 bg-slate-900/40 hover:bg-purple-950/20 hover:border-purple-500/40 transition-all duration-300 text-slate-300 hover:text-white relative overflow-hidden group/btn text-center min-h-[64px]">
@@ -165,20 +156,16 @@
                 </div>
             </div>
 
-            <!-- 卡片 2：線上錄音 -->
             <div class="group relative flex flex-col justify-between p-6 sm:p-8 rounded-3xl glass-panel neon-border-audio transition-all duration-300 ease-out transform hover:-translate-y-1.5 overflow-hidden min-h-[340px] sm:min-h-[360px]">
                 <div class="absolute -right-10 -top-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-300"></div>
 
                 <div>
-                    <!-- 圖標容器 -->
                     <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform duration-300 mb-5">
-                        <!-- 麥克風圖標 -->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" class="w-5.5 h-5.5 sm:w-6 sm:h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
                         </svg>
                     </div>
 
-                    <!-- 標題與描述 -->
                     <h2 class="text-xl sm:text-2xl font-bold text-white group-hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2">
                         線上錄音
                         <span class="text-[10px] sm:text-xs bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30 font-normal shrink-0">專業</span>
@@ -188,11 +175,9 @@
                     </p>
                 </div>
 
-                <!-- 分流跳轉區 (按鈕排版防擠壓優化) -->
                 <div class="mt-6 pt-4 border-t border-slate-800/60 flex flex-col gap-2.5">
                     <span class="text-[10px] sm:text-[11px] tracking-wider text-emerald-400 font-semibold uppercase">請選擇您的裝置版本：</span>
                     <div class="grid grid-cols-2 gap-2.5">
-                        <!-- 電腦版 -->
                         <a href="https://gemini.google.com/share/816eb1566a5a" target="_blank" rel="noopener noreferrer" 
                            onclick="handleRedirect('🎙️ 線上錄音 (電腦版)')" id="btn-audio-pc"
                            class="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl border border-slate-700/60 bg-slate-900/40 hover:bg-emerald-950/20 hover:border-emerald-500/40 transition-all duration-300 text-slate-300 hover:text-white relative overflow-hidden group/btn text-center min-h-[64px]">
@@ -201,7 +186,6 @@
                             </span>
                             <span class="text-[9px] sm:text-[10px] text-slate-500 mt-1 group-hover/btn:text-emerald-300 transition-colors">立體聲/進階設定</span>
                         </a>
-                        <!-- 手機版 -->
                         <a href="https://gemini.google.com/share/232e05471b77" target="_blank" rel="noopener noreferrer" 
                            onclick="handleRedirect('📱 線上錄音 (手機版)')" id="btn-audio-mobile"
                            class="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl border border-slate-700/60 bg-slate-900/40 hover:bg-emerald-950/20 hover:border-emerald-500/40 transition-all duration-300 text-slate-300 hover:text-white relative overflow-hidden group/btn text-center min-h-[64px]">
@@ -267,14 +251,12 @@
 
     </div>
 
-    <!-- 頁尾宣告 -->
     <footer class="relative z-10 w-full text-center py-5 border-t border-slate-900/60 bg-[#070b12]/50 px-4">
         <p class="text-[10px] sm:text-xs text-slate-500 leading-normal">
             &copy; 2026 多媒體線上工具箱 - 影音資料完全留存在您本地端，守護個人安全隱私
         </p>
     </footer>
 
-    <!-- Toast 容器 -->
     <div id="toast-container" class="fixed top-4 right-4 left-4 sm:left-auto sm:right-5 sm:w-96 z-50 flex flex-col gap-3 pointer-events-none"></div>
 
     <script>
